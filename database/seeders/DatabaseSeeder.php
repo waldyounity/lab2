@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Waldo',
             'email' => 'test@example.com',
         ]);
+
+        $this->call([
+            categoriaSeeder::class,
+            productoSeeder::class, 
+        ]);
     }
 }
